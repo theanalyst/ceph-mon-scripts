@@ -20,9 +20,9 @@ if __name__ == "__main__":
     mapfile = "map" + datetime.now().isoformat()
     config = ConfigParser.ConfigParser()
     config.read(configfile)
-    access = config.get('credentials','access')
-    secret = config.get('credentials','secret')
-    host = config.get('credentials','host')
+    access = config.get('credentials', 'access')
+    secret = config.get('credentials', 'secret')
+    host = config.get('credentials', 'host')
 
     conn = boto.connect_s3(
             aws_access_key_id=access,
