@@ -8,11 +8,9 @@ from sh import ceph
 from datetime import datetime
 
 
-
 def get_monmap(mapfile):
     status = ceph("mon", "getmap", o=mapfile)
     return status.exit_code == 0
-
 
 
 if __name__ == "__main__":
