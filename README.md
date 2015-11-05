@@ -14,12 +14,12 @@ invoked as
 ```
 
 The config file is a simple file having s3 credentials as variables in
-the below format
+the below format (note the _lack_ of quotes)
 
 ```
 [credentials]
-access='access_key'
-secret='secret'
-host='s3host'
+access=access_key
+secret=secret
+host=s3host
 ```
 
